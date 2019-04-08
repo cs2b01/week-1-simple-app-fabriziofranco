@@ -1,12 +1,27 @@
 <!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8">
-<title>Title of the document</title>
-</head>
-
-<body>
-Content of the document......
-</body>
-
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Login</title>
+    <script type="text/javascript">
+    function login(){
+      if(PS.value==US.value){
+        alert("Sesión iniciada con éxito");}
+      else{
+        alert("Verifique sus datos e intentelo nuevamente, por favor");
+        PS.value="";
+        US.value="";
+      }}
+    </script>
+  </head>
+  <body>
+    <h1><b>Login</b></h1><hr>
+    <span>Usuario:</span>
+    <input type="text" id="US" placeholder="Ingrese su Username"><br><br>
+    <span>Contraseña:</span>
+    <input type="password" id="PS" placeholder="Ingrese su password" >
+    <br><br>
+    <input type="button" id="BT" value="Login" onclick="login()">
+  </body>
 </html>
